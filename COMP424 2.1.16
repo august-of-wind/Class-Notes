@@ -1,0 +1,223 @@
+COMP424 2.1.16  
+
+HTML 5 - Reckoning  
+
+* HTML 5 was finally standardized in October 2014. After many years of effective usage - many people haad been using it for a while.  
+* HTML 5 is hashtag DOPE.  
+* Canvas allows us to do direct drawing within the confines of the browser.  
+* We don't have to use plugins like Flash anymore - HTML 5 can handle video and audo.  
+* Tons of new content specific elements, article, footer, header, nav, section. Help us make good, well-structured sites with common elements (while generic)  
+* Better import control, with form controls like alendar, date, time, email, url, and search.  
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+stuff
+
+</body>
+</html>
+
+* we often use tags for elements.  
+
+<p> paragraph stuff </p>
+<h1> HEADING </h1>
+
+* above metadata used to apply structure to a page's content.  
+* comments are important, too!  
+
+<! -- a comment in html -->
+
+* not visible on rendered page lol  
+* used for dev reference  
+* New semantic elements added for HTML5  
+known as block-level elements  
+include the following elements  
+
+<article>
+<aside>
+<details>
+<figure>
+<figcaption>
+<footer>
+<header>
+<main>
+<nav>
+<section>  
+
+* better structure underlying documents  
+	- add clear semantic divisions  
+* adds meaning to actual code - we're adding a formal layer of meaning relative to the content.  
+	- This group is "Article". This group is "main". This is the definitive "footer".  
+* Anything that is indexing content must be semantic to be effective. By introducing formal semantic context for web design, you are pushing along semantic organization of data.  
+	- Make it a lot easier to organize web content. Instead of everyone making their own custom divs, we're formalizing them with a semantic nature. A lot of it is to do with formalizing the content.  
+* The way HTML5 organizes content, makes life easier for us as designers and developers. It removes the guesswork for what to call shit - HTML5 works for us!  
+* Section and article can cause some confusion.  
+Not as widely used as expected. They help create a sense of division on a page so we can create a sense of places within a page.  
+* HTML5 is supposed to have relegated div.  
+	- Much weaker in terms of it's semantic value.  
+* Article and section  
+	- Good analogy with a standard newspaper.  
+	- Think of the way that a newspaper or magazine organizes its content. You might actually have a newspaper that contains many different sections. YOu might ahve headline news, you might have weather, you might have international news, you might ahve adult personals. Those could easily be divided into "sections".  
+	- Any of the underlying individual perceived content should be able to be pulled out. You should be able to pull out an article from within a section, otherwise it shouldnt' be an article. You should be able to pull it out seperately.  You can have many articles within a section.  
+* An article is a "self-contained composition ina  document, page, application, or site and that is, in pricniple, independently distributable or ersuable, e.g. in syndication."  
+	- Articles become easily reusable.  
+* Standardizes indexing of web pages - if you want to parse through all the articles for certain sites, it is child's play.  
+* Using more traditional non-semantic elements is easier (people use divs and spans).  
+
+<header>  
+
+* used to collect and contain introductory content  
+* semantically appropriate for the head or top of a page.  
+technically feasible and acceptable to includ emultiple <header> elements (eg: main content, sidebar content, an article, a section...)  
+* makes sense for indexing-friendly web design.  
+
+<nav>  
+
+* Stores and defines a set of links fo rinternal and external navigation.  
+* Not meant to define all page nav links.  
+* Often considered sutable for primary site links.  
+* Additional links can be placed in 
+	- sidebar, footer, main content...  
+
+<main>  
+* this element tag defines our main content  
+* traditionally the central content area of our page or document.  
+* HTML4 often used a <div> element.  
+	- plus a class or id to define cnetral content.  
+* we are defining the primary content for the page itself.  
+
+* it should not include any other tags that are normally repated from page to page to page. What we're actually doing with the main elelemtt is we are deifning the content tha tis the central content for that particular page, not for all the pages going across the site. That's why we don't includ ethigns like headres or navs as children. Those would sit above or seperately. 
+
+<section>  
+
+* a section is a thematic grouping of content. The theme of each section should be identified, typically by including a heading as a child of the section element.  
+* a site can be subdivided into multiple <section> groupings.  
+	- as we might consider a chapter or section break in a book.  
+
+<article>  
+
+* again, as with traditional print, you may conside rit suitable for organizaing and containing individual content. It should make sense and be a logical goruping of independent content.  
+
+* We might consider using it for a post of some kind, a forum or blog post.  
+* The key to using this particular tag is to effectively consider wheather the material can be used in isolation.  
+
+<aside>  
+
+* often causes issues, kinda weird.  
+* Contextual information - something that adds context to articles, for instance.
+	- Possibly background information in a blog post, such as details about the era an article was written, in an information box offset from the article it provides context for.  
+
+<figure> & <figcaption>  
+
+* As with print media, we can logically group image and caption.  
+* <figure> acts as parent fo rimage grouping.  
+* child elements include  
+	- <img> and <figcaption>  
+	- WHOA SO COOL SEMANTICS ARE NEAT.  
+
+<footer>
+
+* provides additional information about its containing element.  
+* Might use this to define and record authoer or article pub date, or even metadata.  
+* Could simply be placed at the foot of a page.  
+	- record copyright infomration  
+	- contextual links  
+	- contact infomation  
+	- small logos.  
+	- makes sense for the individual document.  
+* There will always be <html> and <body> tags in diagrams.  
+* divided the page into four logical, semantic divisions.  
+	- header  
+	- nav  
+	- main  
+	- footer  
+* we could also move nav into the header division if we wanted to at the top of the page  
+* we could also add a sidebar to help us divide the pages further.  
+
+
+<video> element  
+
+* until HTML5, video playback relion on plugins.  
+	- Adobe Flash  
+* embed video using element tag <video>  
+* add attributes for  
+	- heigh, width, controls...  
+* not all web browsers support all video codecs.  
+* option to specify multiple video sources  
+	 - best supported codecs include MP4, WebM, OGG...
+	 - There is cascading streaming of video. You can add multiple codecs of the same video to a web page. Websites will try to decode each video, cascading down until a comptaible codec is found.  
+* Good general support for <video> element.  
+* check browser support for <video> elements.  
+
+<video width="300" height="240" controls>
+	<source src-"media/video/movie.mp4" type="video/mp4">
+	<source src="media/video/movie.webm" type="video/webm">
+	Your browser does not support the video tag.
+</video>  
+
+* in example above, browser cascades through mp4 and webM, playing first supported codec. If browser cascades through all available codecs to no avail, you can have text display such as "yo dude get a better browser lol".  
+* adding controls gives user access to full-screen, also!  
+
+<audio>
+
+* works similarly as video.  
+* we might not include controls if we want user to have to listen to the whole thing.  
+
+<canvas>
+
+* a canvas for graphics you want to render in a defined space.  
+* you can craete HTML5 games, drawings, whatever.  
+* Colors, shapes, you pick!  
+* games are then just what you see, and mathematics.  
+
+<h1> <h2> .... <hn>  
+
+* used to delineate levels of heading.  
+* Add a line break using the <br /> element.  
+* <hr /> element adds a horizontal line.  
+
+Linking  
+
+* Linking is an inevitable part of web design and HTML usage.  
+* Can be considered within three different contexts.  
+	- linking to an external site, wihtin yours, or even on the same page.  
+* You can link absolutely (to a specific page)
+	- Relative links (directory-based linking "locally")
+	- You can use internal anchors to jump form one place on a page to another.  
+	<a id="anchor">Anchor</a>
+	- href="#anchor" references the anchor (seen above) for that specific part of the page. If you have an anchor defined for a page, any page can navaigate to that anchor.  
+	- href="/another_page.html#anchor" allows you to do that. Think linking to specific headers on Wikipedia. You can go as granular as a single pixel on a page.  
+* We can specify a target, href, name, class, id, lang, style, title as attributes for anchors.  
+* target attribute specifies where the link will be opened relative to the current browswer window  
+	- CSS has a number of different ways things can be styled within interactive documents.  
+		- It can start with the actual defaults, except for example, if you include a link on a page, what is the default color for that page?  
+			- blue, royal blue.  
+		- it can also cascade down to the actual settings of the browser itself. User can define wheather or not to open pop-up windows from links. Then we have the actual styling in the CSS. It cascades down.  
+	- The actual values for target are legacy in terms of how it's used.  
+		- _blank, _self  
+
+Working with Images  
+
+* <img> allows us to embed an image within a web page.  
+* <img src="image.jpg" /> will look for a file called image.jpg in the same location as the containing html file. It will look at exactly the same current level.  
+* other optional attributes include  
+	- class, id, alt, title, width, height.
+	- fun fact - title will by default be a mouse-over text!  
+	- useful to defin ea width and height. If browser cannot render your image (i.e., can't find the directory containing it), the brwoser will still render the <img> with its defined width and height. The browser will still rserve that amount of space within the design of the page for your image. Can help maintain design in the case of image failures.  
+	- if you wrap an anchor around the image, you would get an awful, thick, blue border around your image. You'd have to style accordingly.  
+
+	<map name="textmap">
+		<area shape="rect" coords="..." alt="Quote 1" href="notes.html" />
+	</map>  
+
+	You can use image maps to allow notes on specific points of an image.  
+* We'll stop here.  
+
+
+
