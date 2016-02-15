@@ -1,0 +1,97 @@
+2.8.16 Notes
+
+* Tables allow us to group our data in similar fashion to a styandard spreadsheet.  
+	- To add a row, we use <tr> element.  
+	- to adda header, we use <th>  
+	- We can add data to the rows with <td> element.  
+	- We can set borders for the table, different colors for each row, to create actual variation to the design.  
+* Columns and row can be set to span multiple rows, or effectively multiple cells as we start to structure the data within the table. We can do this with the column or row-span attribute.  
+	- colspan and rospan attribute.  
+* Also order data with lists.  
+	 - unordered list
+	 	- <ul> element.
+	 - ordered list  
+	 	- <ol> element.  
+
+<ul>
+<li>....</li>
+<ul>
+
+* list items can be manipulated via CSS.  
+	- the default for the list item will be a little black bullet point.  
+	- if we start nesting unordered list, then the default list type will be a disc.  
+	- if we nest another, the list type will be a square as default. Changes with nesting.  
+
+<dl>
+<dt> Game 1 </dt>
+<dd> our definition </dd>
+</dl>
+
+* definition list uses <dt> for the item, and <dd> for the definition.  
+	- can be styled in CSS with the list style declaration. The default will be a standard numerical list.  
+	- allows us to simply organize a series of defined items with their associated definitions.  
+	- we can add any number, and can nest html elements within our definition.  
+* forms  
+	- used to capure data. 
+
+<form>
+Text field: <input type="text" name="textfield" />
+</form>
+
+* data is submitted on the client-side, with captured from user input, and then processed by a server.  
+
+What is DOM?
+
+* DOM is a hierarchical representation of the underlying document.  
+	- structured as representation of a tree data structure.  
+	- DOM tree is scontructed using a set of nodes.  
+	- Starts at root.  
+* Useful to add javascript element to bottom of document, to ensure that DOM is loaded before javascript tries to manipulate the DOM - depends on the application, as sometimes javascript may help render the DOM, and thus should be added above (depending on how you want to the DOM rendering to cascade.).  
+* You can set a default base address for all relative URLs in links within our HTML
+
+<base href="/media/images/" target="_base">
+
+* For instance, if we add a link such as...
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+* then that href will reference "/media/images/style.css" - useful!  
+
+CSS
+
+* Link to your css using relative links per page - don't hardcore styling into HTML - it's tacky (and leads to unnecessary styling reproduction).  
+* Follows a defined syntax pattern  
+	- selector
+		- body or p
+	- declaration  
+		- property and value pairing. 
+* we have either inline or block-level elements.  
+	- element's content rendered on a new line outside flow of content.  
+		- a few sample block elements are article, div, figure, et.  
+		- a few inline elements are img, object, script, span, button, input, label, eelct, strong, var, etc.
+* block-level is not technically defined for new elements in HTML5.  
+	- we now have a slightly more complex model called content categories.  
+		- includes three pimrary types of content categories - is a natural way of thinking about how docuemtns are broken up.  
+	- Metadata content - modify presentation or behavior of docuemnt, or convey additional info
+	- Flow content - typically contain text or embedded content 
+	- Sectioning content - create a section in current outline to define scope of elements.
+	- Heading content - defines title of a section.  
+	- Phrasing content - defines the text and the markup it contains  
+	- Embedded content - imports or inserts resource or content form another markup language or namespace  
+	- Interactive content - includes elements that are specifically designed for user interaction  
+	- Form-associated content - lements contained by a form parent element  
+* Content  
+	- Box's content area describes element's actual content.  
+	- Properties can include color, backgound, img...
+		- apply inside content edge.  
+	- dimensions include content width and content-height.  
+	- content size properties (assuming that hte box-sizing property remains default)
+		- width, min-width, max-width, heigh, min-height, max-height  
+	- padding, and how it'll affect the surrounding border.  
+		- background, colour, etc, properties for a content area extend into the padding.
+		- This content will also extend into the padding area.
+		- The padding is located in the box's content edge.
+		- We can control the space between the padding and contend edge using ...
+			 - padding-top, padding-right, padding-bottom, padding-left.  
+			 - we can add actual sizes, which is calculated clockwise - you can add up to four properties to "padding: " attribute.
+* We can style individual entries in a list or table - by using the "nth-entry" attribute.
