@@ -1,0 +1,27 @@
+2.18.16 HCI Notes
+
+Design for Memory
+* Ensure interface is designed to reduce or eliminate need to memorise and recall  
+* Interface design enhanced with recognisable icons and names.  
+	- user can easily find interface elements as they scan a list, menu...  
+* Icons can act as clarifying elements  
+	- icons should represent concrete and recognizable things.  
+* goal is to make it easier for users to create hooks from working to long-term memory  
+* create hooks that trigger user's memory about how to use an application.  
+* non-representative naming schemes may add to user's cognitive burden.  
+* We want to reduce the cognitive load for the user - how to build a robust system that is easy to learn and remember how to use?  
+* Cognitive load may be impacted by the following interactions:  
+	- scrolling, navigating, searching within an application  
+	- choosing options such as menus, lists, forms...  
+	- reading isntructions, lables, titles...  
+	- switching contexts (eg: switching between windows, tabs, pages...)  
+	- switching visual attention  
+		- reading text, then referring to an image, and then back to the text.  
+	- memory recall for a specific ID, name, action, task sequence...  
+	- simply waiting for the system or application to respond... 
+	- recovering from a specific distraction  
+		- such as an interruption not relevant to the current task at hand... 
+	- minimize the amount of change for hte user from what they're doing - try to to interrupt a train of thought for the user.  
+		- make sure such distractions are necessary.  
+* We need to try and eliminate unnecessary user interactions in our website.  
+* Don't be like weather.com  
