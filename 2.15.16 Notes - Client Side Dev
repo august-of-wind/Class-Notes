@@ -1,0 +1,45 @@
+2.15.16 Notes - Client Side Dev  
+
+* Css Basics - Cascading Rules  
+	- Rules applied by each browser as a ruleset conflict arises - issue of specificicity.  
+	p { 
+		color: blue;
+	}
+	p.p1 {
+		color: red;
+	}
+	- more specific rules caase takes precedence.  
+	- issue of possible duplication in rulesets.  
+	- cascading ruleset state that the later ruleset will be applied.  
+	- Different styles specified in different places can interact in complex web of ways - can be  an added benefit, but can also be a headache.  
+	- Sources that kick in relative to the actual cascade  
+		- Default styles applied by browser  
+		- Styles specific to the current user of the document  
+		- Styles linked to the document by the designer - designer is last, lol  
+	- We can have cascading within the final of the three sources, of course. We can have remote on top of remote and so on...Cascading cascades until it doesn't.  
+	- Descendants will inherit properties from their ancestors.
+
+	body {
+		background: blue;
+	}
+
+	p {
+		color: white;
+	}
+
+	- here, p inherits background: blue from body.  
+	- margin, padding, and border rules for block-leel elements not inherited
+	- You can specify fonts for the body, or within an element's specific ruleset.  
+	
+	body {
+		font-family: "Times New Roman", George, Serif;
+	}
+	- value for the font-family property specifies preferred and fall-back fonts. Serif is just whatever the default Serif font is the default to the browswer.
+		 - quotes around Times New Roman specify it as default.  
+	- "em" denotes meta-units - these are multiplier of the current font-size.
+		- if current font-size is 12px, then 1.1em is 18px	
+	- you can set the base font-size to 100% of font size for a user's web browser. Gives you more control over font-sizse.
+		- if you change the font-size of body from 100% to 75%, every inheriting element will change accordingly, if it is set to a relative sie, such as "x-large".  
+	- Dominant aspect of CSS becomes specificity - inline stylings are always the last styling looked at - javascript can exploit this - you negate the cascade when you can just be specific to elements being manipulated. 
+	- We are reducing redundancy when javascript can handle styling - we tie this to the logic of the application.  
+	- 
